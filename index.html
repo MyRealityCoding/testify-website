@@ -2,6 +2,10 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link href="li-scroller.css" rel="stylesheet" type="text/css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script src="jquery.li-scroller.1.0.js"></script>
+
 		<title>Testify - You'll never bang alone!</title>
 	</head>
 	<body>
@@ -9,6 +13,11 @@
 		<a class="button" href="http://facebook.com/testifymetal">Facebook</a>
 		<a class="button" href="mailto:sebastian.kalthoff@googlemail.com">Booking</a>
 		<a class="button" href="https://www.youtube.com/user/testifymetal">Youtube</a>
+
+		<h1>Live</h1>
+		<ul id="newsticker">
+			<li><span>26.12.2013</span><a href="https://www.facebook.com/events/541161832637716/">E-Werk Beckum, 20 Uhr</a></li>
+		</ul>
 
 		<div class="soundcloud">
 
@@ -27,5 +36,11 @@
 				<a href="https://www.facebook.com/awaitingdownfall">Awaiting Downfall</a>
 			</span>
 		</div>
+
+
+		<script type="text/javascript">
+		$("#newsticker").liScroll({travelocity: 0.05});
+		</script>
+
 	</body>
 </html>
